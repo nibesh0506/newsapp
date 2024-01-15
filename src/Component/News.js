@@ -285,11 +285,11 @@ export class News extends Component {
             }
             <div className="row my-3">
                 {!this.state.loading && this.state.articles.map((element) => {
-                    return <div className="col-md-4" key={element.url}>
+                    return <div className="col-md-4 my-3" key={element.url} >
                         <NewsItem title={element.title}
                                   description={element.description}
                                   urlToImage={!element.urlToImage ? 'https://imgk.timesnownews.com/story/AP_19187620141218_1.jpg' : element.urlToImage}
-                                  link={element.url}/>
+                                  link={element.url} author={element.author} date={element.publishedAt} source={element.source.name}/>
                     </div>
                 })} </div>
             <div className="container d-flex justify-content-between">

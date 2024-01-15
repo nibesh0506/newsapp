@@ -31,7 +31,7 @@ export class NavBar extends Component {
                                 <Link className="nav-link active dropdown-toggle" to="/" role="button"
                                    aria-expanded="false" data-bs-toggle="dropdown">Category
                                 </Link>
-                                <div className="dropdown-menu position-static">
+                                <div className="dropdown-menu position-absolute">
                                     <Link className="dropdown-item" to="/business">Business</Link>
                                     <div className="dropdown-divider" style={{borderTop: '1px solid #343a40'}}></div>
                                     <Link className="dropdown-item" to="/entertainment">Entertainment</Link>
